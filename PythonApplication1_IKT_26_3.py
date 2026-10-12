@@ -1,2 +1,5 @@
 print("Tere tulemast!")
-print("See on IKT-26-3 programm.")
+print("See on IKT-26-3 programm.",end="")
+print("Mul on", 3, "kassi",end="-")
+print("Aasta on", 2026,end="\n")
+print("2026", "10", "01", sep="/")
