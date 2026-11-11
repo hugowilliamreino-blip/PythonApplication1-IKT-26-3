@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PythonApplication1_IKT_26_3.py" />
+    <Compile Include="Teeme2_Valikud.py" />
     <Compile Include="Vigade otsing.py" />
   </ItemGroup>
   <ItemGroup>
