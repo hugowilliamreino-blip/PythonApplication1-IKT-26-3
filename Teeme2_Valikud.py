@@ -61,3 +61,7 @@ else:
 
 if nimi.isdigit():
     print("Nimi sisaldab ainult numbreid.")
+if nimi.isalnum():
+    print("Nimi sisaldab ainult tähti ja numbreid.")
+if nimi.islower():
+    print("Nimi on kõik väiketähed.")
