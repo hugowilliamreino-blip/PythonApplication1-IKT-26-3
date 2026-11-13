@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>af2793d8-912f-491c-ab20-7430adf1c6b4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Vigade otsing.py</StartupFile>
+    <StartupFile>Too_2_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="PythonApplication1_IKT_26_3.py" />
     <Compile Include="Teeme2_Valikud.py" />
+    <Compile Include="Too_2_1.py" />
     <Compile Include="Vigade otsing.py" />
   </ItemGroup>
   <ItemGroup>
