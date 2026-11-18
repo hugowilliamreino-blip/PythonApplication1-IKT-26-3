@@ -194,3 +194,52 @@ else:
 print("Arve nr: 00000000")
 print(arve)
 print(f"Kokku: {summa}€")
+
+# 9 Ruut
+# Kasutaja sisestab nelinurga nelja külje pikkused. 
+# Programm teatab, kas tegemist saab olla ruuduga (kõik küljed on võrdsed). Kontrolli ka, et kõik pikkused on positiivsed.
+# Koosta programmi kohta plokkskeem ja salvesta see PNG-pildina programmiga samasse kausta.
+
+try:
+    print("Nelinurga kontroll.")
+    külg1=float(input("1. külje pikkus: "))
+    külg2=float(input("2. külje pikkus: "))
+    külg3=float(input("3. külje pikkus: "))
+    külg4=float(input("4. külje pikkus: "))
+    if külg1>0 and külg2>0 and külg3>0 and külg4>0:
+        if külg1==külg2==külg3==külg4:
+            print("See on ruut.")
+        else:
+            print("See on nelinurk.")
+    else:
+        print("Viga: Küljed < 0.")
+except ValueError:
+    print("Viga: Täisarv")
+
+# 10 Matemaatika
+# Kasutaja sisestab kaks arvu. Seejärel küsib programm, millist tehet ta soovib (+, -, *, /), ja kuvab tulemuse.
+# Kui sisestatakse tundmatu tehtemärk, kuva veateade.
+# Nulliga jagamise korral kuva arusaadav teade, mitte veateade Pythonist.
+
+tehted=["+", "-", "*", "/"]
+try:
+
+    arv1=float(input("Sisesta 1. arv: "))
+    arv2=float(input("Sisesta 2. arv: "))
+    tehe=input("Sisesta tehe: ")
+    if tehe in tehted:
+        if tehe=="+":
+            print(f"{arv1}{tehe}{arv2}={arv1+arv2}")
+        elif tehe=="-":
+            print(f"{arv1}{tehe}{arv2}={arv1-arv2}")
+        elif tehe=="*":
+            print(f"{arv1}{tehe}{arv2}={arv1*arv2}")
+        elif tehe=="/":
+            if arv2==0:
+                print("DIV/0")
+            else:
+                print(f"{arv1}{tehe}{arv2}={arv1/arv2}")
+    else:
+        print("Tundmatu tehtemärk.")
+except ValueError:
+    print("Viga: Sisesta arvud.")
